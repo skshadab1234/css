@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Text Glowing </title>
+        <style>
+        @import url('https://fonts.googleapis.com/css?family=Bad+Script');
+        
+        body{
+            margin:0;
+            padding:0;
+            width:100%;
+            font-family:'Bad Script', cursive;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+            background:#000;
+        }
+        
+        h1{
+            margin:0;
+            padding:0;
+            color:#111;
+            font-size:16em;
+        }
+        
+        h1 span{
+            display:table-cell;
+            margin:0;
+            padding:0;
+            animation: animate 2s linear infinite;
+        }
+        
+        h1 span:nth-child(1){
+            animation-delay:0s;
+        }
+        
+        
+        h1 span:nth-child(2){
+            animation-delay:0.25s;
+        }
+        
+        
+        h1 span:nth-child(3){
+            animation-delay:0.5s;
+        }
+        
+        
+        h1 span:nth-child(4){
+            animation-delay:0.75s;
+        }
+        
+        
+        h1 span:nth-child(5){
+            animation-delay:1.24s;
+        }
+        
+        
+        h1 span:nth-child(5){
+            animation-delay:1.75s;
+        }
+        @keyframes animate 
+        {
+            0%,100%
+            {
+                color:#fff;
+                filter:blur(2px);
+                text-shadow:0 0 10px #00b3ff;
+                           0 0 20px #00b3ff;
+                           0 0 40px #00b3ff;
+                           0 0 80px #00b3ff;
+                           0 0 120px #00b3ff;
+                           0 0 200px #00b3ff;
+                           0 0 300px #00b3ff;
+                           0 0 400px #00b3ff;
+            }
+            5%,95%
+            {
+                color:#111;
+                filter:blur(0px);
+                text-shadow:0 0 10px none;
+            }
+        }
+        
+        .container{
+            height:100vh;
+            margin:0 50%;
+        }
+        </style>
+    </head>
+    <body>
+     <div class="container">
+          <h1>
+          <span>S</span>
+          <span>h</span>
+          <span>a</span>
+          <span>d</span>
+          <span>a</span>
+          <span>b</span>
+      </h1>
+     </div>
+    </body>
+</html>
